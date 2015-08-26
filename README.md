@@ -5,7 +5,7 @@ We're still in the planning and design phase, but this repository will be the fu
 
 ## Theme Features
 
-Right now the primary goal is to identify what features and functionality a good WordCamp theme should have. [Visit this wordpress.org post](http://make.wordpress.org/community/2015/08/26/update-on-buil…wordcamp-theme/) to share your ideas for what an awesome new WordCamp theme should have!
+Right now the primary goal is to identify what features and functionality a good WordCamp theme should have. [Visit this wordpress.org post](http://make.wordpress.org/community/2015/08/26/update-on-building-a-new-wordcamp-theme) to share your ideas for what an awesome new WordCamp theme should have!
 
 ## Theme Team
 
