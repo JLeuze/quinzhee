@@ -1,7 +1,7 @@
 # Quinzhee
 A cool new starter theme for WordCamp sites!
 
-We're still in the planning and design phase, but this repository will be the future home of [a new WordCamp theme](https://make.wordpress.org/community/2015/07/02/results-from-the-wordcamp-org-tools-follow-up-survey/), code named Quinzhee, which is the most Minnesotan [camping reference](https://en.wikipedia.org/wiki/Quinzhee) that I can make. If you have any good ideas for different, more descriptive name, please share them!
+We're still in the planning and design phase, but this repository will be the future home of [a new WordCamp theme](https://make.wordpress.org/community/2015/07/02/results-from-the-wordcamp-org-tools-follow-up-survey/), code named Quinzhee, which is the most Minnesotan [camping reference](https://en.wikipedia.org/wiki/Quinzhee) that I can make. If you have any good ideas for a different, more descriptive name, please share them!
 
 ## Theme Features
 
