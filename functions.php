@@ -102,9 +102,54 @@ add_action( 'after_setup_theme', 'quinzhee_content_width', 0 );
  */
 function quinzhee_widgets_init() {
 	register_sidebar( array(
+		'name'          => esc_html__( 'Featured Section', 'quinzhee' ),
+		'id'            => 'featured-section',
+		'description'   => 'Featured section on all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Call To Action', 'quinzhee' ),
+		'id'            => 'cta',
+		'description'   => 'For 1 to 4 call to action widgets on all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Announcement', 'quinzhee' ),
+		'id'            => 'announcement',
+		'description'   => 'For an announcement widget on all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'quinzhee' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+		'id'            => 'sidebar-default',
+		'description'   => 'Default sidebar used on all pages with a sidebar.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sponsors', 'quinzhee' ),
+		'id'            => 'sponsors',
+		'description'   => 'For adding sponsor widgets to all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'quinzhee' ),
+		'id'            => 'footer',
+		'description'   => 'For adding footer widgets to all pages.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
