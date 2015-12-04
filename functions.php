@@ -42,6 +42,9 @@ function quinzhee_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	// Set the default post thumbnail size
+	set_post_thumbnail_size( 892, 502 ); // 892 pixels wide by 502 pixels tall, resize mode
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'quinzhee' ),
@@ -88,7 +91,7 @@ add_action( 'after_setup_theme', 'quinzhee_setup' );
  * @global int $content_width
  */
 function quinzhee_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'quinzhee_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'quinzhee_content_width', 892 );
 }
 add_action( 'after_setup_theme', 'quinzhee_content_width', 0 );
 
