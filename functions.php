@@ -156,15 +156,6 @@ function quinzhee_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Area', 'quinzhee' ),
-		'id'            => 'footer-area',
-		'description'   => 'For a footer widget on all pages.',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
 		'name'          => esc_html__( '404 Area', 'quinzhee' ),
 		'id'            => '404-area',
 		'description'   => 'For adding widgets to the 404 page.',
