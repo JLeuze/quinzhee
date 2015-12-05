@@ -102,8 +102,8 @@ add_action( 'after_setup_theme', 'quinzhee_content_width', 0 );
  */
 function quinzhee_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Featured Section', 'quinzhee' ),
-		'id'            => 'featured-section',
+		'name'          => esc_html__( 'Featured Area', 'quinzhee' ),
+		'id'            => 'featured-area',
 		'description'   => 'Featured section on all pages.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -112,7 +112,7 @@ function quinzhee_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Call To Action', 'quinzhee' ),
-		'id'            => 'cta',
+		'id'            => 'cta-area',
 		'description'   => 'For 1 to 4 call to action widgets on all pages.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -121,7 +121,7 @@ function quinzhee_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Announcement', 'quinzhee' ),
-		'id'            => 'announcement',
+		'id'            => 'announcement-area',
 		'description'   => 'For an announcement widget on all pages.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -139,7 +139,7 @@ function quinzhee_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sponsors', 'quinzhee' ),
-		'id'            => 'sponsors',
+		'id'            => 'sponsors-area',
 		'description'   => 'For adding sponsor widgets to all pages.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -147,9 +147,27 @@ function quinzhee_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer', 'quinzhee' ),
-		'id'            => 'footer',
-		'description'   => 'For adding footer widgets to all pages.',
+		'name'          => esc_html__( 'Footer Widgets', 'quinzhee' ),
+		'id'            => 'footer-area',
+		'description'   => 'For 1 to 4 footer widgets on all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Area', 'quinzhee' ),
+		'id'            => 'footer-area',
+		'description'   => 'For a footer widget on all pages.',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( '404 Area', 'quinzhee' ),
+		'id'            => '404-area',
+		'description'   => 'For adding widgets to the 404 page.',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
