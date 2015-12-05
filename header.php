@@ -40,4 +40,25 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+	<?php // Check for Featured Section widget
+	if ( is_active_sidebar( 'featured-area' ) ) {
+		echo '<div id="featured-area" class="widget-area">';
+			dynamic_sidebar( 'featured-area' );
+		echo '</div><!-- #featured-area -->';
+	}
+
+	// Check for Call To Action widgets
+	if ( is_active_sidebar( 'cta-area' ) ) {
+		echo '<div id="cta-area" class="widget-area">';
+			dynamic_sidebar( 'cta-area' );
+		echo '</div><!-- #cta-area -->';
+	}
+
+	// Check for Announcement widget
+	if ( is_active_sidebar( 'announcement-area' ) ) {
+		echo '<div id="announcement-area" class="widget-area">';
+			dynamic_sidebar( 'announcement-area' );
+		echo '</div><!-- #announcement-area -->';
+	} ?>
+
 	<div id="content" class="site-content">
