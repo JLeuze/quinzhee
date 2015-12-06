@@ -24,15 +24,18 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'quinzhee' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php endif; ?>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		</div><!-- .site-branding -->
+	<?php // Check for header background
+	if( get_theme_mod( 'quinzhee_header_background' ) ) {
+		$quinzhee_header_class = 'site-header-background';
+	} else {
+		$quinzhee_header_class = 'site-header-no-background';
+	} ?>
+
+	<header id="masthead" class="site-header <?php echo $quinzhee_header_class; ?>" role="banner">
+		<?php  // Check for Site Logo
+		if ( get_theme_mod( 'quinzhee_site_logo_upload' ) ) {
+			echo '<img id="site-logo" src="' . esc_url( get_theme_mod( 'quinzhee_site_logo_upload' ) ) . '" alt="' . get_bloginfo( 'name' ) . '" />';
+		} ?>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'quinzhee' ); ?></button>
