@@ -76,11 +76,24 @@ add_action( 'customize_register', 'quinzhee_register_theme_customizer' );
 function quinzhee_customizer_css() {
     ?>
     <style type="text/css">
-        a { color: <?php echo get_theme_mod( 'quinzhee_primary_color' ); ?>; }
+        .site-content a,
+        .main-navigation li li a,
+        .main-navigation li a:hover,
         .button,
-        #announcement-area,
+        .button.secondary-button:hover,
+        .main-navigation li.menu-button:last-of-type a:hover,
+        .main-navigation li.menu-button:last-of-type li a:hover,
+        .cta-widget-area .widget a:hover .fa { color: <?php echo get_theme_mod( 'quinzhee_primary_color' ); ?>; }
+        .button:hover,
+        .site-content .button,
+        .footer-multi-widgets-area .button,
+        .main-navigation li.menu-button:last-of-type a,
+        .announcement-widget-area,
+        .main-navigation li li a:hover,
         .nav-links a { background-color: <?php echo get_theme_mod( 'quinzhee_primary_color' ); ?>; }
-        #cta-area .widget { border-color: <?php echo get_theme_mod( 'quinzhee_primary_color' ); ?>; }
+        .button:hover,
+        .button.secondary-button:hover,
+        .cta-widget-area .widget { border-color: <?php echo get_theme_mod( 'quinzhee_primary_color' ); ?>; }
     </style>
     <?php
 }
