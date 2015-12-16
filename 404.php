@@ -16,8 +16,10 @@ get_header(); ?>
 
 				<?php // Check for 404 widgets
 				if ( is_active_sidebar( '404-area' ) ) {
-					echo '<div id="area-404" class="widget-area">';
-						dynamic_sidebar( '404-area' );
+					echo '<div id="area-404" class="area-widget-404 widget-area">';
+						echo '<div class="wrap">';
+							dynamic_sidebar( '404-area' );
+						echo '</div><!-- .wrap -->';
 					echo '</div><!-- #area-404 -->';
 				} else {
 					?><header class="page-header">
